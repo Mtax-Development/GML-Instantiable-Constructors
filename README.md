@@ -23,7 +23,7 @@ This project uses the following script files from other free and open-source lib
 * [`struct_merge()`](https://raw.githubusercontent.com/Mtax-Development/GML-Development-Toolbox/refs/heads/master/scripts/struct_merge/struct_merge.gml) and [`null()`](https://raw.githubusercontent.com/Mtax-Development/GML-Development-Toolbox/refs/heads/master/scripts/null/null.gml) from [GML Development Toolbox](https://github.com/Mtax-Development/GML-Development-Toolbox).
 * Entirety of [GML-OOP](https://github.com/Mtax-Development/GML-OOP).
 
-1. Visit the link of each raw script file linked from [GML Development Toolbox](https://github.com/Mtax-Development/GML-Development-Toolbox). Then perform following steps for each of them:
+1. Visit the link of each raw script file linked from [GML Development Toolbox](https://github.com/Mtax-Development/GML-Development-Toolbox). Then perform following steps for each of them:    
  1.1. Select and copy the entire file. (Keyboard shortcuts: `Ctrl+A` to select the entire content, `Ctrl+C` to copy it.)    
  1.2. In GameMaker with opened project that **GML Instantiable Constructors** was included to, create a script asset with the name of currently copied script and edit it to paste into its content. (Keyboard shortcuts: `Alt+C` to create a script asset, `F2` to rename the created asset, `Ctrl+V` to paste the content.)    
 2. Visit the [GML-OOP](https://github.com/Mtax-Development/GML-OOP) repository and follow initialization instructions found there.
