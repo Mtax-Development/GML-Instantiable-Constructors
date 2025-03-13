@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"NetworkingInstance",
   "parent":{
-    "name":"Script",
-    "path":"folders/GML Instantiable Constructors/Script.yy",
+    "name":"Instantiable Constructor",
+    "path":"folders/GML Instantiable Constructors/Instantiable Constructor.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

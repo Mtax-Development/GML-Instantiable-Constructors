@@ -8,8 +8,8 @@
   "name":"NetworkingObject",
   "overriddenProperties":[],
   "parent":{
-    "name":"Object",
-    "path":"folders/GML Instantiable Constructors/Object.yy",
+    "name":"Blueprint Object",
+    "path":"folders/GML Instantiable Constructors/Blueprint Object.yy",
   },
   "parentObjectId":{
     "name":"Object",

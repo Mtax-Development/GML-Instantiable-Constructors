@@ -11,8 +11,8 @@
   "defaultScriptType":1,
   "Folders":[
     {"$GMFolder":"","%Name":"GML Instantiable Constructors","folderPath":"folders/GML Instantiable Constructors.yy","name":"GML Instantiable Constructors","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Object","folderPath":"folders/GML Instantiable Constructors/Object.yy","name":"Object","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Script","folderPath":"folders/GML Instantiable Constructors/Script.yy","name":"Script","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Blueprint Object","folderPath":"folders/GML Instantiable Constructors/Blueprint Object.yy","name":"Blueprint Object","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Instantiable Constructor","folderPath":"folders/GML Instantiable Constructors/Instantiable Constructor.yy","name":"Instantiable Constructor","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "IncludedFiles":[],
   "isEcma":false,
