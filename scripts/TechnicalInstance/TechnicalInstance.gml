@@ -4,8 +4,8 @@
 function TechnicalInstance() : Instance() constructor
 {
 	static object = TechnicalObject;
-	static beginStepEvent = function() {}
-	static drawGUIEndEvent = function() {}
+	static beginStepEvent = null;
+	static drawGUIEndEvent = null;
 	
 	priority = 0;
 	

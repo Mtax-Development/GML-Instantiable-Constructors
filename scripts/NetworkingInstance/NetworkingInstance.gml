@@ -3,7 +3,7 @@
 function NetworkingInstance() : Instance() constructor
 {
 	static object = NetworkingObject;
-	static networkingEvent = function() {}
+	static networkingEvent = null;
 	
 	priority = 4;
 	

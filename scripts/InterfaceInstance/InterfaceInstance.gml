@@ -3,7 +3,7 @@
 function InterfaceInstance() : Instance() constructor
 {
 	static object = InterfaceObject;
-	static drawGUIEvent = function() {}
+	static drawGUIEvent = null;
 	
 	priority = 5;
 	
