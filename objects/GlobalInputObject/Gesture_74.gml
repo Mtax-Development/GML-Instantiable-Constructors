@@ -1,0 +1,4 @@
+with (base)
+{
+	globalRotateStartEvent();
+}
