@@ -1,1 +1,1 @@
-EventQueue.step.add(base.priority, [base, stepEvent]);
+EventQueue.step.add(base.priority, [base, base.stepEvent]);

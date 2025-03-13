@@ -1,1 +1,1 @@
-EventQueue.draw.add(base.priority, [base, drawEvent]);
+EventQueue.draw.add(base.priority, [base, base.drawEvent]);

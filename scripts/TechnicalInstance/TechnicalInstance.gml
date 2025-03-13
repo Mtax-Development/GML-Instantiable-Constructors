@@ -19,12 +19,6 @@ function TechnicalInstance() : Instance() constructor
 		{
 			base: _base,
 			visible: true,
-			createEvent: createEvent,
-			beginStepEvent: beginStepEvent,
-			stepEvent: stepEvent,
-			drawEvent: drawEvent,
-			drawGUIEndEvent: drawGUIEndEvent,
-			cleanUpEvent: cleanUpEvent
 		};
 	}
 }

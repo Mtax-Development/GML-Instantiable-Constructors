@@ -1,1 +1,1 @@
-EventQueue.drawGUI.add(base.priority, [base, drawGUIEvent]);
+EventQueue.drawGUI.add(base.priority, [base, base.drawGUIEvent]);

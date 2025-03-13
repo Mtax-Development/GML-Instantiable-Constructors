@@ -17,11 +17,6 @@ function InterfaceInstance() : Instance() constructor
 		{
 			base: _base,
 			visible: true,
-			createEvent: createEvent,
-			stepEvent: stepEvent,
-			drawEvent: drawEvent,
-			drawGUIEvent: drawGUIEvent,
-			cleanUpEvent: cleanUpEvent
 		};
 	}
 }

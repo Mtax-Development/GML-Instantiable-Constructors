@@ -21,10 +21,6 @@ function Instance() constructor
 		{
 			base: _base,
 			visible: is_method(drawEvent),
-			createEvent: createEvent,
-			stepEvent: stepEvent,
-			drawEvent: drawEvent,
-			cleanUpEvent: cleanUpEvent
 		};
 	}
 	
