@@ -1,6 +1,6 @@
 {
   "$GMObject":"",
-  "%Name":"EventQueue",
+  "%Name":"zzzzz_EventQueue",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
@@ -9,11 +9,11 @@
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":12,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"EventQueue",
+  "name":"zzzzz_EventQueue",
   "overriddenProperties":[],
   "parent":{
-    "name":"Blueprint Object",
-    "path":"folders/GML Instantiable Constructors/Blueprint Object.yy",
+    "name":"GML Instantiable Constructors",
+    "path":"folders/GML Instantiable Constructors.yy",
   },
   "parentObjectId":null,
   "persistent":true,

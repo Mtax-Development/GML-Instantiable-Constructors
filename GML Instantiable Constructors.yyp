@@ -22,12 +22,12 @@
   },
   "name":"GML Instantiable Constructors",
   "resources":[
-    {"id":{"name":"EventQueue","path":"objects/EventQueue/EventQueue.yy",},},
     {"id":{"name":"GlobalInputObject","path":"objects/GlobalInputObject/GlobalInputObject.yy",},},
     {"id":{"name":"InterfaceObject","path":"objects/InterfaceObject/InterfaceObject.yy",},},
     {"id":{"name":"NetworkingObject","path":"objects/NetworkingObject/NetworkingObject.yy",},},
     {"id":{"name":"Object","path":"objects/Object/Object.yy",},},
     {"id":{"name":"TechnicalObject","path":"objects/TechnicalObject/TechnicalObject.yy",},},
+    {"id":{"name":"zzzzz_EventQueue","path":"objects/zzzzz_EventQueue/zzzzz_EventQueue.yy",},},
     {"id":{"name":"GlobalInputInstance","path":"scripts/GlobalInputInstance/GlobalInputInstance.yy",},},
     {"id":{"name":"Instance","path":"scripts/Instance/Instance.yy",},},
     {"id":{"name":"InterfaceInstance","path":"scripts/InterfaceInstance/InterfaceInstance.yy",},},
