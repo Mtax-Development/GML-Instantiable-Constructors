@@ -1,9 +1,9 @@
 base.instance = id;
 
-var _argument = ((is_array(createEventArgument)) ? createEventArgument : [createEventArgument]);
+var _argument = variable_struct_get(self, "createEventArgument");
 variable_struct_remove(self, "createEventArgument");
 
 with (base)
 {
-	script_execute_ext(createEvent, _argument);
+	script_execute_ext(createEvent, ((is_array(_argument)) ? _argument : [_argument]));
 }
