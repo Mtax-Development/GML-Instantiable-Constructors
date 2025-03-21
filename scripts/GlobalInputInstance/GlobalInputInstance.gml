@@ -20,4 +20,17 @@ function GlobalInputInstance() : Instance() constructor
 	static globalRotateEndEvent = null;
 	
 	priority = 2;
+	
+	/// @returns			{struct}
+	/// @description		Return setup data used to operate the object instance.
+	static getBaseInstanceData = function()
+	{
+		var _base = self;
+		
+		return
+		{
+			base: _base,
+			persistent: true,
+		};
+	}
 }
