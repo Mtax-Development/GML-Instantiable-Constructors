@@ -7,6 +7,7 @@
 
 instanceLayer = new Layer(layer_get_name(layer));
 step = new PriorityQueue();
+everyStep = new PriorityQueue();
 draw = new PriorityQueue();
 drawGUI = new PriorityQueue();
 cycle = 1;
