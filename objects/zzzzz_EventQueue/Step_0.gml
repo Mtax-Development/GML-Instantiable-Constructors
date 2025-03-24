@@ -1,4 +1,5 @@
 cycle += (60 / game_get_speed(gamespeed_fps));
+frameIsStep = (cycle >= 1);
 
 repeat (everyStep.getSize())
 {
@@ -12,10 +13,8 @@ repeat (everyStep.getSize())
 	}
 }
 
-if (cycle >= 1)
+if (frameIsStep)
 {
-	frameIsStep = true;
-	
 	repeat (step.getSize())
 	{
 		var _event = step.removeLast();
@@ -32,6 +31,5 @@ if (cycle >= 1)
 }
 else
 {
-	frameIsStep = false;
 	step.clear();
 }
