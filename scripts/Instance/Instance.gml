@@ -3,6 +3,7 @@
 function Instance() constructor
 {
 	static object = Object;
+	static stepEventQueue = EventQueue.step;
 	static createEvent = null;
 	static stepEvent = null;
 	static drawEvent = null;

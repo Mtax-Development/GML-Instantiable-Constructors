@@ -4,6 +4,7 @@
 function GlobalInputInstance() : Instance() constructor
 {
 	static object = GlobalInputObject;
+	static stepEventQueue = EventQueue.everyStep;
 	static stepEvent = null;
 	static globalTapEvent = null;
 	static globalDoubleTapEvent = null;
