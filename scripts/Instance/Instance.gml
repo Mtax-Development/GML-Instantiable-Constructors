@@ -28,23 +28,35 @@ function Instance() constructor
 	/// @argument			argument? {any|any[]}
 	/// @argument			location? {Vector2}
 	/// @argument			added_data?... {struct}
-	/// @returns			{int:instance}
+	/// @returns			{handle:instance} | On error: {noone}
 	/// @description		Instantiate this constructor as an object with appropriate functions as
 	///						events.
 	static createInstance = function(_argument, _location)
 	{
-		var _instance_data = self.getBaseInstanceData();
-		var _i = 2;
-		repeat (argument_count - _i)
+		if (!is_handle(instance))
 		{
-			struct_merge(_instance_data, argument[_i]);
+			var _instance_data = self.getBaseInstanceData();
+			var _i = 2;
+			repeat (argument_count - _i)
+			{
+				struct_merge(_instance_data, argument[_i]);
+				
+				++_i;
+			}
 			
-			++_i;
+			_instance_data.createEventArgument = _argument;
+			
+			return EventQueue.instanceLayer.createInstance(object, _location, _instance_data);
+		}
+		else
+		{
+			new ErrorReport().report([other, self, "createInstance()"],
+									 ("Attempted to instantiate a constructor while its instance " +
+									  "already exists: " +
+									  "{" + string(self) + "}"));
 		}
 		
-		_instance_data.createEventArgument = _argument;
-		
-		return EventQueue.instanceLayer.createInstance(object, _location, _instance_data);
+		return noone;
 	}
 	
 	/// @returns			{undefined}
