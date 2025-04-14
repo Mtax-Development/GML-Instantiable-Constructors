@@ -1,11 +1,13 @@
 //  @function				GlobalInputInstance()
-/// @description			Instance type operating Global Gesture events and a Step event executed
-///							outside of Event Queue for correct input processing.
+/// @description			Instance type operating Global Gesture events, a Step event executed
+///							every step for correct input processing, as well as a Draw GUI End event
+///							executing outside of the Event Queue.
 function GlobalInputInstance() : Instance() constructor
 {
 	static object = GlobalInputObject;
 	static stepEventQueue = EventQueue.everyStep;
 	static stepEvent = null;
+	static drawGUIEndEvent = null;
 	static globalTapEvent = null;
 	static globalDoubleTapEvent = null;
 	static globalDragStartEvent = null;
@@ -31,6 +33,7 @@ function GlobalInputInstance() : Instance() constructor
 		return
 		{
 			base: _base,
+			visible: ((drawEvent != null) or (drawGUIEndEvent != null)),
 			persistent: true,
 		};
 	}

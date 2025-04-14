@@ -21,7 +21,7 @@ function Instance() constructor
 		return
 		{
 			base: _base,
-			visible: is_method(drawEvent),
+			visible: (drawEvent != null)
 		};
 	}
 	
