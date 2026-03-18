@@ -50,10 +50,10 @@ function Instance() constructor
 		}
 		else
 		{
-			new ErrorReport().report([other, self, "createInstance()"],
-									 ("Attempted to instantiate a constructor while its instance " +
-									  "already exists: " +
-									  "{" + string(self) + "}"));
+			ErrorReport.report([other, self, "createInstance()"],
+							   ("Attempted to instantiate a constructor while its instance already " +
+								"exists: " +
+								"{" + string(self) + "}"));
 		}
 		
 		return noone;
