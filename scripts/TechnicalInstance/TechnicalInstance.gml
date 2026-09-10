@@ -1,13 +1,19 @@
-//  @function				TechnicalInstance()
-/// @description			Instance type operating Begin Step and Draw GUI events, which are executed
-///							outside of the Event Queue.
+//  @function			TechnicalInstance()
+/// @description		Instance type operating Begin Step and Draw GUI events, which are executed
+///						outside of the Event Queue.
 function TechnicalInstance() : Instance() constructor
 {
+  #region [Properties]
+	
 	static object = TechnicalObject;
 	static beginStepEvent = null;
 	static drawGUIEndEvent = null;
 	
 	priority = 0;
+	
+  #endregion
+  #region [Methods]
+   #region <Getters>
 	
 	/// @returns			{struct}
 	/// @description		Return setup data used to operate the object instance.
@@ -21,4 +27,7 @@ function TechnicalInstance() : Instance() constructor
 			visible: true,
 		};
 	}
+	
+   #endregion
+  #endregion
 }

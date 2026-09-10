@@ -1,11 +1,17 @@
-//  @function				InterfaceInstance()
-/// @description			Instance type operating the Draw GUI event.
+//  @function			InterfaceInstance()
+/// @description		Instance type operating the Draw GUI event.
 function InterfaceInstance() : Instance() constructor
 {
+  #region [Properties]
+	
 	static object = InterfaceObject;
 	static drawGUIEvent = null;
 	
 	priority = 5;
+	
+  #endregion
+  #region [Methods]
+   #region <Getters>
 	
 	/// @returns			{struct}
 	/// @description		Return setup data used to operate the object instance.
@@ -19,4 +25,7 @@ function InterfaceInstance() : Instance() constructor
 			visible: true,
 		};
 	}
+	
+   #endregion
+  #endregion
 }

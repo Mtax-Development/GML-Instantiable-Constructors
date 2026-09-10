@@ -1,7 +1,9 @@
-//  @function				Instance()
-/// @description			Framework for instantiable constructors containing object events and data.
+//  @function			Instance()
+/// @description		Framework for instantiable constructors containing object events and data.
 function Instance() constructor
 {
+  #region [Properties]
+	
 	static object = Object;
 	static stepEventQueue = EventQueue.step;
 	static createEvent = null;
@@ -11,6 +13,10 @@ function Instance() constructor
 	
 	instance = undefined;
 	priority = 10;
+	
+  #endregion
+  #region [Methods]
+   #region <Getters>
 	
 	/// @returns			{struct}
 	/// @description		Return setup data used to operate the object instance.
@@ -24,6 +30,36 @@ function Instance() constructor
 			visible: (drawEvent != null)
 		};
 	}
+	
+   #endregion
+   #region <Setters>
+	
+	/// @argument			source {SpriteRenderer}
+	/// @returns			{any}
+	/// @description		Set the properties of the specified constructor as instance variables and
+	///						return that constructor.
+	static updateInstance = function(_source)
+	{
+		switch (instanceof(_source))
+		{
+			case "SpriteRenderer":
+				instance.sprite_index = _source.sprite.ID;
+				instance.x = _source.location.x;
+				instance.y = _source.location.y;
+				instance.image_index = _source.frame;
+				instance.image_xscale = _source.scale.x;
+				instance.image_yscale = _source.scale.y;
+				instance.image_angle = _source.angle.value;
+				instance.image_blend = _source.color;
+				instance.image_alpha = _source.alpha;
+			break;
+		}
+		
+		return _source;
+	}
+	
+   #endregion
+   #region <Execution>
 	
 	/// @argument			argument? {any|any[]}
 	/// @argument			location? {Vector2}
@@ -68,27 +104,6 @@ function Instance() constructor
 		return undefined;
 	}
 	
-	/// @argument			source {SpriteRenderer}
-	/// @returns			{any}
-	/// @description		Set the properties of the specified constructor as instance variables and
-	///						return that constructor.
-	static updateInstance = function(_source)
-	{
-		switch (instanceof(_source))
-		{
-			case "SpriteRenderer":
-				instance.sprite_index = _source.sprite.ID;
-				instance.x = _source.location.x;
-				instance.y = _source.location.y;
-				instance.image_index = _source.frame;
-				instance.image_xscale = _source.scale.x;
-				instance.image_yscale = _source.scale.y;
-				instance.image_angle = _source.angle.value;
-				instance.image_blend = _source.color;
-				instance.image_alpha = _source.alpha;
-			break;
-		}
-		
-		return _source;
-	}
+   #endregion
+  #endregion
 }
